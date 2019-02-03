@@ -1,0 +1,47 @@
+body {
+  background-color: #FFFFFF;
+  font-family: times;
+  font-size: 11pt;
+  width: 600px;
+  margin-left:50px;
+}
+
+nav {
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size:25pt;
+  font-style:italic;
+  line-height: normal;
+  letter-spacing: 1pt;
+  font-weight: normal;
+}
+
+nav a {
+  text-decoration: underline;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+nav a:hover{
+  background-color: #E3A587;
+  color:#FFFFFF;
+}
+
+.current{
+  background-color: #E3A587;
+  text-transform: uppercase;
+  color:#FFFFFF;
+}
+
+.post-title{
+  font-size: 12pt;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+
+.poem-body{
+  width: 300px;
+}
