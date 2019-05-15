@@ -1,6 +1,19 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    animation: background-fade 20s infinite;
+}
+
+@keyframes background-fade {
+    0% {
+    background:white;
+    }
+    50% {
+        background:#E3DFFF;
+    }
+    100% {
+        background:#D3C0CD;
+    }
 }
 
 a.skiplink{
@@ -20,36 +33,44 @@ h1 {
     line-height: auto;
 }
 
+a {
+    border-bottom: 1px solid transparent;
+}
+
+a:hover{
+
+    border-bottom: 1px solid;
+}
+
 #container{
     margin: 0 auto;
-    width: 650px;
+    margin-bottom: 3em;
+    height: 100vh;
+    width: 700px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    align-items: flex-end;
     /* display: grid
     grid: auto-flow / 1fr 1fr;
     grid-gap:10px;
     font-size: 1.3em; */
 }
 
+
 .hello{
-    display: flex;
     /* background-color: aliceblue; */
-    grid-column: span 2;
-    padding: 10px;
+    /* grid-column: span 2; */
+    padding: 20px;
     letter-spacing: 0.2em;
+    text-align: right;
 }
 
 .message{
-    display: flex;
-    padding: 10px;
-    grid-column:span 2;
+    /* display: flex;
+    grid-column:span 2; */
+    padding: 20px;
     line-height: 1.5;
+    margin-top: 1.1em;
 }
 
-.text-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
