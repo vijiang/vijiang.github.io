@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+a.skiplink{
+  position: relative;
+  top: -80px;
+  transition: top ease-in 0.3s;
+}
+
+a.skiplink:focus, a.skiplink:active{
+  display: inline;
+  top: 0px;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 3em;
+    line-height: auto;
+}
+
+#container{
+    margin: 0 auto;
+    width: 650px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* display: grid
+    grid: auto-flow / 1fr 1fr;
+    grid-gap:10px;
+    font-size: 1.3em; */
+}
+
+.hello{
+    display: flex;
+    /* background-color: aliceblue; */
+    grid-column: span 2;
+    padding: 10px;
+    letter-spacing: 0.2em;
+}
+
+.message{
+    display: flex;
+    padding: 10px;
+    grid-column:span 2;
+    line-height: 1.5;
+}
+
+.text-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
