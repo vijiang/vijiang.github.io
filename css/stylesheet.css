@@ -6,13 +6,21 @@ body {
 
 @keyframes background-fade {
     0% {
-    background:white;
+        background:white;
     }
-    50% {
+    25% {
         background:#E3DFFF;
     }
-    100% {
+    50% {
         background:#D3C0CD;
+    }
+
+    75% {
+        background:#E3DFFF;
+    }
+    
+    100%{
+        background:white;
     }
 }
 
