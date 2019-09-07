@@ -1,16 +1,18 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 1em;
-    animation: background-fade 20s infinite;
-}
-
-h1{
-    font-family:'Playfair Display', serif;
-    font-size: 7em;
-    line-height: auto;
+    /* background-color: #ebe0d4; */
     font-weight: lighter;
 }
 
+h1{
+    display: inline-block;
+    font-family:'Playfair Display', serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 6em;
+    font-weight: lighter;
+}
 
 a.skiplink{
   position: relative;
@@ -34,35 +36,44 @@ a:hover{
 
 #container{
     margin: 0 auto;
-    margin-bottom: 3em;
     height: 100vh;
-    width: 700px;
-    display: flex;
-    /* flex-flow: row wrap; */
-    justify-content: space-between;
-    align-items: flex-end;
-    /* display: grid
-    grid: auto-flow / 1fr 1fr;
-    grid-gap:10px;
-    font-size: 1.3em; */
+    width: 95vw;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto); 
 }
 
-
-.hello{
-    /* background-color: aliceblue; */
-    /* grid-column: span 2; */
-    padding: 20px;
-    letter-spacing: 0.2em;
-    text-align: right;
+#sidebar{
+    display: grid;
+    grid-column:1 / 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
 }
 
-.message{
-    /* display: flex;
-    grid-column:span 2; */
-    padding: 20px;
-    line-height: 1.5;
-    margin-top: 1.1em;
+.name-clear{
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
 }
+
+.bio{
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    
+}
+
+.nav-links{
+    display: grid;
+    grid-row: 3 / 4;
+}
+
+.social{
+    display: grid;
+    grid-row: 4 / 5;
+}
+
 
 @media (max-width: 750px)
 {
