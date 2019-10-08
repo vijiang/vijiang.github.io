@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+    <title>Under Construction</title>
+</head>
+
+<body>
+    <header>
+        <a class="skiplink" href="#maincontent" tabindex="0">Skip to main content</a>
+    </header>
+    <main id="maincontent" tabindex="-1">
+        <div id="container">
+
+            <div id="sidebar">
+                    <h1 class="name-clear">Vivian Jiang</h1>
+                <div class="bio" area="sidebar">MSI Student in UX Design at the University of Michigan.
+                    <br><br>Interested in reclaiming our attention from the pitfalls of persuasive design.</div>
+                <div class="nav-bar" area="sidebar">
+                    <ul>
+                        <li class="nav-links"><a href="main.html">Index</a></li>
+                        <li class="nav-links">
+                            <a href="bio.html">Bio</a>
+                        </li>
+                        <li class="nav-links"><a class="sec_title">Projects</a>
+                            <div class="proj_list">
+                                <ul>
+                                    <li>Quicken Loans: Drive it Home Sweepstakes<br><i>Summer Internship Project</i>
+                                    </li>
+                                    <li>Pitchfork Album Reviews: 1000 Songs For You<br><i>Using Python & Spotify's
+                                            API</i></li>
+                                    <li>Consolidating Communications: A Report<br><i>User Research & Contextual
+                                            Inquiry</i></li>
+                                    <li>Greensycle<br><i>Mid-fi Prototype</i></li>
+                                    <li>Airbnb Design Jam</li>
+                                    <li>Clarice Lispector in the NYT<br><i>Using Python & NYT's API</i></li>
+                                    <li>The Oleander Review<br>
+                                        <i>A Literary Journal</i></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-links"><a href="misc.html">Etc.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="hero-content"> <!-- start hero content area-->
+                <div class="gs-grid">
+                    <div class="gs-title gs-blck-spcing">
+                        <h1>GreenSycle</h1>
+                    <p>
+                        <i>An interaction design project.</i>
+                        <br>
+                        <b>Role:</b> User researcher, UX/UI designer, prototyper
+                        <br><br>
+                        With this design project, my goal was to address the problems and incorrect recycling practices that can arise when the information and regulations of Ann Arbor’s curbside recycling program are not well known. I hope to better inform residents of what can and cannot be recycled, and to also suggest means for the collective recycling of items that are not able to be placed in convenient curbside bins (such as plastic bags, thermal papers, and certain types of packing
+                        materials).
+                    </p></div>
+
+                    <div class="gs-blck-spcing">
+                        <h2>Problem Statement:</h2>
+                        <br><p>
+                            Prompt: Think of a design solution that can improve your community or day-to-day life.
+                        <p>
+                                In a <a target="_blank" href="https://www.nytimes.com/2018/05/29/climate/recycling-landfills-plastic-papers.html">recent article</a> for the New York Times, Livia Albeck-Ripka describes a behavior that waste managers have begun to call wishful or "aspirational recycling," which occurs when "we want something to be recyclable, so we put it in the
+                                recycling bin." This unintentional sabotage of recycling initiatives is quite detrimental, as contaminated or impure batches of recycled materials are often rejected by buyers and sent to the landfill instead.
+                        </p>
+                        </p>
+                    </div>
+                    <img src="images/gs-companalysis.png">
+                    <div class="gs-persona-txt gs-blck-spcing">
+                        <div>
+                            <h2>Personas</h2>
+                            <br>
+                            <p>6 total (including 1 anti-persona):</p>
+                        </div>
+                        <div>
+                           <p>
+                                I created personas based on user research I conducted around Ann Arbor's Kerrytown neighborhood. The insights gathered from these interviews with students and other residents informed elements of my design process
+                                and helped me narrow my scope and purpose.
+                           </p>
+                        </div>
+                    </div>
+                    <img src="images/gs-mel.png">
+                </div>
+            </div> <!-- closes hero content area -->
+            
+        </div>
+
+    </main>
+    <footer>
+        <script>
+            var section_title = document.getElementsByClassName("sec_title");
+            var a;
+            for (a = 0; a < section_title.length; a++) {
+                section_title[a].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    }
+                    else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                })
+            }
+        </script>
+
+    </footer>
+
+</body>
+
+</html>

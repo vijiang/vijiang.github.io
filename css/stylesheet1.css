@@ -1,28 +1,93 @@
 body {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1em;
+    font-family: 'Times', serif;
+    font-size: 0.9rem;
+    /* letter-spacing:  */
     /* background-color: #ebe0d4; */
-    font-weight: lighter;
-    line-height: 1.3em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #363636;
 }
 
-h1{
-    display: inline;
-    font-family:'Playfair Display', serif;
-    font-style: italic;
+h1{ /* for name in column, main headers*/
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-style: italic; */
     text-transform: uppercase;
-    font-size: 6em;
+    font-size: 5rem;
     font-weight: lighter;
+    color: #000000;
+    line-height: 100%;
+    /* transform: rotate(-5deg); */
 }
+
+h2{ /* for subheaders*/
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-style: italic; */
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #000000;
+    line-height: 100%;
+}
+
 
 li {
     padding: 10px;
     list-style: none;
 }
 
-p {
-    padding: 15px;
+li a{
+    margin: 0px; 
+    display: block; 
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: #000000;
 }
+
+li a:hover{
+    color: #000000;
+    font-style: italic;
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a{
+    color: #3e60b5;
+    text-decoration: underline;
+}
+
+a:hover{
+    font-style: italic;
+}
+
+li a:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    transform-origin: left;
+}
+
+li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 
 a.skiplink{
   position: relative;
@@ -35,65 +100,95 @@ a.skiplink:focus, a.skiplink:active{
   top: 0px;
 }
 
-a {
-    border-bottom: 1px solid transparent;
-}
-
-a:hover{
-
-    border-bottom: 1px solid;
-}
 
 #container{
     margin: 0 auto;
     height: 100vh;
     width: 95vw;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 2fr repeat(5, 1fr);
-    grid-gap: 2em;
+    /* background-color: #c0c0c0; */
+    display: flex;
 }
 
 #sidebar{
-    display: grid;
-    grid-column:1 / 3;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3em;
+    width: 270px;
+    margin-top: 25px;
+    /* background-color: aquamarine; */
+    position: static;
 }
 
 #hero-content{
-    display: grid;
-    grid-template-rows: auto;
-    grid-row: 1 / 2;
-    grid-column: 3 / 7;
+    margin: 25px 0px 50px 50px;
+    padding: 0px 20px 20px 20px;
+    width: 700px;
+    /* background-color: bisque; */
 }
 
-/* div[area=sidebar]{
-    font-weight: bold;
+/* .project-grid{
+    display: grid;
+    grid-template-columns: 300px 400px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.project-grid > img {
+     max-width: 100%;
+     height: auto;
 } */
 
+.gs-grid{
+    display: flex;
+    flex-direction: column;
+}
+
+.gs-blck-spcing{
+    margin: 15px;
+}
+
+.gs-grid > img {
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gs_title{
+    font-size: 2rem;
+}
+
+.gs-persona-text{
+    display: flex;
+    flex-direction: row;
+}
+
+
+div[area=sidebar]{
+    align-self: center;
+    padding: 10px 0px 10px 15px;
+}
+
 .name-clear{
-    display: grid;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
     line-height: initial;
 }
 
 .bio{
-    display: grid;
-    grid-column: 1 / 3;
-    grid-row: 2 / 3; 
+    margin-top:15px;
 }
 
-.nav-links{
-    display: grid;
-    grid-row: 3 / 4;
+li[class=nav-links]:hover{
+    /* background-color: antiquewhite; */
+    -webkit-transition: all 0.20s ease-in-out 0s;
+    transition: all 0.20s ease-in-out 0s;
 }
 
-.social{
-    display: grid;
-    grid-row: 4 / 5;
+.proj_list{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+  margin-top: 5px;
+}
+
+footer{
+    height: 200px;
+    width: auto;
 }
 
 
