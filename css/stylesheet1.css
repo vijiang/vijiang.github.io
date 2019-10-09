@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Times', serif;
     font-size: 0.9rem;
@@ -6,6 +10,24 @@ body {
     font-weight: 300;
     line-height: 1.5em;
     color: #363636;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 200px;
+    overflow: auto;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+}
+
+b{
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
 }
 
 h1{ /* for name in column, main headers*/
@@ -113,13 +135,12 @@ a.skiplink:focus, a.skiplink:active{
     width: 270px;
     margin-top: 25px;
     /* background-color: aquamarine; */
-    position: static;
 }
 
 #hero-content{
     margin: 25px 0px 50px 50px;
     padding: 0px 20px 20px 20px;
-    width: 700px;
+    width: 800px;
     /* background-color: bisque; */
 }
 
@@ -148,6 +169,13 @@ a.skiplink:focus, a.skiplink:active{
     object-fit: cover;
     width: 100%;
     margin-bottom: 20px;
+    display:block;
+}
+
+.gs-grid > video {
+    object-fit: cover;
+    margin-bottom: 20px;
+    display:block;
 }
 
 .gs_title{
@@ -157,6 +185,13 @@ a.skiplink:focus, a.skiplink:active{
 .gs-persona-text{
     display: flex;
     flex-direction: row;
+}
+
+.gs-app-features{
+    display:flex;
+    flex: 1 1 0;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
@@ -184,11 +219,6 @@ li[class=nav-links]:hover{
   overflow: hidden;
   transition: max-height 0.25s ease-out;
   margin-top: 5px;
-}
-
-footer{
-    height: 200px;
-    width: auto;
 }
 
 
