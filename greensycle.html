@@ -23,7 +23,7 @@
                     <br><br>Interested in reclaiming our attention from the pitfalls of persuasive design.</div>
                 <div class="nav-bar" area="sidebar">
                     <ul>
-                        <li class="nav-links"><a href="main.html">Index</a></li>
+                        <li class="nav-links" ><a href="main.html">Index</a></li>
                         <li class="nav-links">
                             <a href="bio.html">Bio</a>
                         </li>
@@ -72,7 +72,7 @@
                         </p>
                         </p>
                     </div>
-                    <img src="images/gs-companalysis.png">
+                    <img src="images/gs-companalysis.png" alt="Competitive analysis diagram">
                     <div class="gs-persona-txt proj-blck-spcing">
                         <div>
                             <h2>Personas</h2>
@@ -86,12 +86,12 @@
                            </p>
                         </div>
                     </div> <!--closes personas section-->
-                    <img src="images/gs-mel.png">
+                    <img src="images/gs-mel.png" alt="Persona diagram of Mel, a 23-year-old student">
                         <div class="proj-blck-spcing">
                             <h2>Preliminary Sketches</h2><br>
                         </div> <!-- closes preliminary sketches title-->
-                    <img src="images/gs_sk1.png">
-                    <img src="images/gs_sk2.png">
+                    <img src="images/gs_sk1.png" alt="Preliminary sketch (1/2)">
+                    <img src="images/gs_sk2.png" alt="Preliminary sketch (2/2)">
                         <div class="proj-blck-spcing">
                             <h2>Paper Prototype</h2>
                         </div>
@@ -101,9 +101,9 @@
                                 QOC (Questions, Options, and Criteria) Analysis
                             </p>
                         </div> <!-- closes Design Rationale title-->
-                        <img src="images/gs-qoc1.png">
-                        <img src="images/gs-qoc2.png">
-                        <img src="images/gs-qoc3.png">
+                        <img src="images/gs-qoc1.png" alt="Design rationale (1/3)">
+                        <img src="images/gs-qoc2.png" alt="Design rationale (2/3)">
+                        <img src="images/gs-qoc3.png" alt="Design rationale (3/3)">
                         <div class="gs-blck-spcing">
                             <h2>Solution Overview</h2>
                             <br>
@@ -148,7 +148,6 @@
 </body>
     
 <footer>
-        oh my GOD why am i here
         <script>
             var section_title = document.getElementsByClassName("sec_title");
             var a;
@@ -157,9 +156,11 @@
                     this.classList.toggle("active");
                     var panel = this.nextElementSibling;
                     if (panel.style.maxHeight) {
+                        console.log("true", panel.style.maxHeight)
                         panel.style.maxHeight = null;
                     }
                     else {
+                        console.log("else")
                         panel.style.maxHeight = panel.scrollHeight + "px";
                     }
                 })
