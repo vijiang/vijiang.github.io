@@ -5,8 +5,7 @@ html {
 body {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
-    /* letter-spacing:  */
-    /* background-color: #ebe0d4; */
+
     line-height: 1.5em;
     color: #363636;
     box-sizing: border-box;
@@ -36,7 +35,7 @@ i {
 
 h1{ /* for name in column, main headers*/
     display: block;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
     /* font-style: italic; */
     text-transform: uppercase;
     font-size: 5rem;
@@ -48,7 +47,7 @@ h1{ /* for name in column, main headers*/
 
 h2{ /* for subheaders*/
     display: block;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     /* font-style: italic; */
     text-transform: uppercase;
     font-size: 2rem;
@@ -59,13 +58,14 @@ h2{ /* for subheaders*/
 
 h3{ /* for subheaders*/
     display: block;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
     /* font-style: italic; */
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: lighter;
     color: #000000;
     line-height: 100%;
+    padding-bottom: 1em;
 }
 
 
@@ -85,8 +85,7 @@ li a{
 }
 
 li a:hover{
-    color: #000000;
-    font-style: italic;
+    color: #C4374D;
     cursor: pointer;
 }
 
@@ -100,7 +99,12 @@ a{
 }
 
 a:hover{
-    font-style: italic;
+    color:#C4374D;
+}
+
+li[class="current"]{
+    color: #C4374D;
+    
 }
 
 li a:before {
@@ -123,6 +127,12 @@ li a:hover:before{
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+li[class=nav-links]:hover{
+    /* background-color: antiquewhite; */
+    -webkit-transition: all 0.20s ease-in-out 0s;
+    transition: all 0.20s ease-in-out 0s;
 }
 
 
@@ -194,10 +204,11 @@ a.skiplink:focus, a.skiplink:active{
     display:block;
 }
 
-.proj-grid > video {
+video {
     object-fit: cover;
     margin-bottom: 20px;
     display:block;
+    padding: 0px 15px 0px 15px;
 }
 
 .proj_title{
@@ -213,7 +224,7 @@ a.skiplink:focus, a.skiplink:active{
     display:flex;
     flex: 1 1 0;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
@@ -228,12 +239,6 @@ div[area=sidebar]{
 
 .bio{
     margin-top:15px;
-}
-
-li[class=nav-links]:hover{
-    /* background-color: antiquewhite; */
-    -webkit-transition: all 0.20s ease-in-out 0s;
-    transition: all 0.20s ease-in-out 0s;
 }
 
 .proj_list{
