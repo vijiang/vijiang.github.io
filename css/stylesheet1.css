@@ -3,11 +3,10 @@ html {
 }
 
 body {
-    font-family: 'Times', serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
     /* letter-spacing:  */
-    background-color: #ebe0d4;
-    font-weight: 300;
+    /* background-color: #ebe0d4; */
     line-height: 1.5em;
     color: #363636;
     box-sizing: border-box;
@@ -18,7 +17,7 @@ body {
 }
 
 main {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 footer{
@@ -53,6 +52,17 @@ h2{ /* for subheaders*/
     /* font-style: italic; */
     text-transform: uppercase;
     font-size: 2rem;
+    font-weight: lighter;
+    color: #000000;
+    line-height: 100%;
+}
+
+h3{ /* for subheaders*/
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-style: italic; */
+    text-transform: uppercase;
+    font-size: 1.5rem;
     font-weight: lighter;
     color: #000000;
     line-height: 100%;
@@ -130,7 +140,7 @@ a.skiplink:focus, a.skiplink:active{
 
 #container{
     margin: 0 auto;
-    height: 100vh;
+    /* height: 100vh; */
     width: 95vw;
     /* background-color: #c0c0c0; */
     display: flex;
@@ -161,29 +171,36 @@ a.skiplink:focus, a.skiplink:active{
      height: auto;
 } */
 
-.gs-grid{
+.proj-grid{
     display: flex;
     flex-direction: column;
 }
 
-.gs-blck-spcing{
+.proj-blck-spcing{
     margin: 15px;
 }
 
-.gs-grid > img {
+.proj-blck-spcing > img {
     object-fit: cover;
     width: 100%;
     margin-bottom: 20px;
     display:block;
 }
 
-.gs-grid > video {
+.proj-grid > img {
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+    display:block;
+}
+
+.proj-grid > video {
     object-fit: cover;
     margin-bottom: 20px;
     display:block;
 }
 
-.gs_title{
+.proj_title{
     font-size: 2rem;
 }
 
