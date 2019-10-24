@@ -5,7 +5,6 @@ html {
 body {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
-
     line-height: 1.5em;
     color: #363636;
     box-sizing: border-box;
@@ -22,7 +21,7 @@ main {
 footer{
     position: relative;
     bottom: 0;
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 b{
@@ -169,6 +168,12 @@ a.skiplink:focus, a.skiplink:active{
     /* background-color: aquamarine; */
 }
 
+#menu-header{
+    display: none;
+    height: 3rem;
+    background-color:#FFB782;
+}
+
 #hero-content{
     margin: 25px 0px 50px 50px;
     padding: 0px 20px 20px 20px;
@@ -262,10 +267,32 @@ div[area=sidebar]{
 
 @media (max-width: 750px)
 {
+
+    header {
+        display: none;
+    }
+
     #container{
         display:block;
         flex-direction: column;
-        margin-bottom: 4rem;
+        margin-bottom: 100px;
+    }
+
+    #menu-header{
+        display: block;
+        color: #ffffff;
+    }
+
+    .cat-align{
+        position: absolute;
+        right:10px;
+        top: 10px;
+    }
+
+
+
+    #sidebar{
+        display:none;
     }
 
     #hero-content{
