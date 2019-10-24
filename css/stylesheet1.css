@@ -281,12 +281,13 @@ div[area=sidebar]{
     #menu-header{
         display: block;
         color: #ffffff;
+        font-size: larger;
     }
 
     .cat-align{
         position: absolute;
-        right:10px;
-        top: 10px;
+        right:15px;
+        top: 12px;
     }
 
 
