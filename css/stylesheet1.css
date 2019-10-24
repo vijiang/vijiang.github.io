@@ -265,5 +265,17 @@ div[area=sidebar]{
     #container{
         display:block;
         flex-direction: column;
+        margin-bottom: 4rem;
     }
+
+    #hero-content{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    ul {
+    padding-left: 15px;
+}
+
 }
