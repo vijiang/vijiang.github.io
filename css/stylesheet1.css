@@ -264,5 +264,6 @@ div[area=sidebar]{
 {
     #container{
         display:block;
+        flex-direction: column;
     }
 }
