@@ -68,7 +68,13 @@ h3{ /* for subheaders*/
     font-weight: lighter;
     color: #000000;
     line-height: 100%;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
+}
+
+ol{
+    margin-left: 20px;
+    padding: 5px 10px 10px 10px;
+    list-style: decimal-leading-zero;
 }
 
 
@@ -98,6 +104,7 @@ p {
 a{
     color: #3e60b5;
     text-decoration: underline;
+    display: inline;
 }
 
 a:hover{
@@ -207,6 +214,21 @@ a.skiplink:focus, a.skiplink:active{
     margin-bottom: 20px;
     display:block;
 }
+
+.double{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.double > img{
+    object-fit: cover;
+    width: 100%;
+}
+
 
 video {
     object-fit: cover;
