@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Josefin+Sans|Montserrat+Subrayada&display=swap"
+        rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0887f1b56b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Personal Identity Package</title>
+</head>
+
+<body>
+    <header>
+        <a class="skiplink" href="#maincontent" tabindex="0">Skip to main content</a>
+    </header>
+    <div id="menu-header">
+        <div class="cat-align sec_title"><i class="fas fa-cat fa-lg"></i>
+            <!-- need to add menu accordion options here!! -->
+        </div>
+    </div>
+    <main id="maincontent" tabindex="-1">
+        <!-- maybe move this to around the body? -->
+        <div id="container">
+            <div id="sidebar">
+                <h1 class="name-clear">Vivian Jiang</h1>
+                <div class="bio" area="sidebar">
+                    <p>MSI Student in UX Design at the University of Michigan.</p>
+                    <p>Feel free to <a href="mailto:vijiang@umich.edu">write to me</a> or to check out my <a
+                            href="docs/ViJiangResume072019.pdf">resume</a>.</p>
+                </div>
+                <div class="nav-bar" area="sidebar">
+                    <ul>
+                        <li class="nav-links"><a href="main.html">Index</a></li>
+                        <li class="nav-links">
+                            <a href="bio.html">About</a>
+                        </li>
+                        <li class="nav-links"><a class="sec_title">Selected Projects</a>
+                            <div class="proj_list">
+                                <ul>
+                                <li><a href="usability-testing.html">Autodesk: Learning & Onboarding<br><i>UX Research & Consulting</i></a>
+                                </li>
+
+                                <li class="current"><a href="film-grid.html">Modular Film Grid<br><i>Graphic Design</i></a></li>
+
+                                <li><a href="p4k-album-reviews.html">
+                                Pitchfork Album Reviews: 1000 Songs For You<br><i>Programming & UX Design</i></a></li>
+
+                                <li><a href="identity.html">Personal Identity Package<br>
+                                <i>Graphic Design</i></a></li>
+
+                                <li><a href="greensycle.html">Greensycle<br><i>UX Research & Design, Prototyping</i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-links"><a href="misc.html">Etc.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="hero-content">
+                <!-- start hero content area-->
+                <div class="proj-grid">
+                    <div class="proj-title proj-blck-spcing">
+                        <h2>Modular Film Grid</h2>
+                        <br>
+                        <p>Use of Adobe Illustrator and Adobe Photoshop to master complex and grid-based layouts, as well as modular graphic design.</p><p>Click <a href="images/film-grid-03.png">here</a> for full size.</p>
+                    </div> <!-- closes proj-title proj-blck-spcing-->
+                    <div class="proj-blck-spcing">
+                        <img src="images/film-grid-03.png">
+                        <img src="images/film-grid-01.png">
+                        <img src="images/film-grid-02.png">
+                    </div>
+
+                </div> <!-- closes proj-grid -->
+            </div> <!-- closes hero content-->
+        </div> <!-- closes container area -->
+
+    </main>
+
+    <footer>
+        <div>designed & coded by vivian jiang</div>
+    </footer>
+    <script>
+        var section_title = document.getElementsByClassName("sec_title");
+        var a;
+        for (a = 0; a < section_title.length; a++) {
+            section_title[a].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                }
+                else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            })
+        }
+    </script>
+</body>
+
+
+</html>

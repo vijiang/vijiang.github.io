@@ -21,6 +21,7 @@ main {
 footer{
     display: flex;
     padding: 30px;
+    margin-bottom: 20px;
     font-size: small;
     justify-content: space-around;
 }
