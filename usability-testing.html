@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Josefin+Sans|Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0887f1b56b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+    <title>Under Construction</title>
+</head>
+
+<body>
+    <header>
+        <a class="skiplink" href="#maincontent" tabindex="0">Skip to main content</a>
+    </header>
+    <div id="menu-header">
+        <div class="cat-align sec_title"><i class="fas fa-cat fa-lg"></i>
+            <!-- need to add menu accordion options here!! -->
+        </div>
+    </div>
+    <main id="maincontent" tabindex="-1"> <!-- maybe move this to around the body? -->
+        <div id="container">
+            <div id="sidebar">
+                    <h1 class="name-clear">Vivian Jiang</h1>
+                <div class="bio" area="sidebar">MSI Student in UX Design at the University of Michigan.
+                    <br><br>Interested in reclaiming our attention from the pitfalls of persuasive design.</div>
+                <div class="nav-bar" area="sidebar">
+                    <ul>
+                        <li class="nav-links"><a href="main.html">Index</a></li>
+                        <li class="nav-links">
+                            <a href="bio.html">About</a>
+                        </li>
+                        <li class="nav-links"><a class="sec_title">Selected Projects</a>
+                            <div class="proj_list">
+                                <ul>
+                                    <li class="current">Autodesk: Learning & Onboarding<br><i>Usability Testing</i>
+                                    </li>
+
+                                    <li><a href="p4k-album-reviews.html">
+                                    Pitchfork Album Reviews: 1000 Songs For You<br><i>Using Spotipy, Python, and Flask</i></a></li>
+
+                                    <li>Consolidating Communications: A Report<br><i>User Research & Contextual Inquiry</i></li>
+
+                                    <li><a href="greensycle.html">Greensycle<br><i>Mid-fi Prototype</i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-links"><a href="misc.html">Etc.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="hero-content"> <!-- start hero content area-->
+                <div class="proj-grid">
+                    <div class="proj-title proj-blck-spcing">
+                        <h2>Usability Testing for Learning & Onboarding</h2>
+                    <p><br>
+                        <b>Role:</b> User Experience Researcher<br>
+                        <b>Client:</b> Autodesk
+                        <br><br>
+                        This project requests data about Caribou's playlist, <i>The Longest Mixtape: 1000 Songs for You</i>, from Spotify, via their API, and stores those tracks in a database using SQLAlchemy. 
+                        <p>Users will be able to check to see if certain songs or artists are in that playlist by entering a title or artist name as part of a Flask route: if a song is in the playlist, the application will also return Pitchfork’s rating of the album the song is present on, if available; If an artist is
+                        in the playlist, the application will return the song(s) present by the artist.</p>
+                        This program was developed as a final project for a master's course (SI 507: Intermediate Python Programming).
+                        <br><br>
+                        Link to this repository on GitHub: <a target="_blank" href="https://github.com/vijiang/507_final_project">here</a>
+                        </div> <!-- closes proj-title proj-blck-spcing-->
+                    </p>
+                    <div class="proj-blck-spcing">
+                        <h2>Screenshots</h2>
+                        <br>
+                        <p>
+                            The following are examples of the program running through various pathways provided by the user.
+                        </p>
+                        <br>
+                    <h3>Route 1:</h3>
+                    <p>/ → shows you a greeting + gives instructions on how to user should enter information
+                    </p>
+                    <img src="images/p4kArtboard 1.png" alt="Route 1 - Home screen">
+                    <h3>Route 2:</h3>
+                    <p>/check/song/&lt;trackname&gt; → checks if a certain track exists in the database/playlist
+                    </p>
+                    <img src="images/p4kArtboard 2.png" alt="Route 2 - Track name search">
+                    <h3>Route 3:</h3>
+                    <p>/check/artist/&lt;artistname&gt; → checks if tracks by a given artist exist in the database/playlist
+                    </p>
+                    <img src="images/p4kArtboard 3.png" alt="Route 3 - Artist name search">
+                    <h3>Error messages:</h3>
+                    <p>To provide error prevention/recovery in the case that incorrect or unusable information is provided.</p>
+                    <img src="images/p4kArtboard 4.png" alt="Error message 1">
+                    <img src="images/p4kArtboard 5.png" alt="Error message 2">
+                    </div>
+                    <div class="proj-blck-spcing">
+                        <h2>Future considerations</h2><br>
+                        <p>I'd love to create a version of this script that reversed the general process: a user could search a track title and a list of the user's playlists (owned or followed) containing that track would be returned. (I have a lot of playlists, and this modification would be both incredibly self-indulgent and rewarding <i class="em em-innocent" aria-role="presentation" aria-label="SMILING FACE WITH HALO"></i>). </p>
+                    </div><!-- closes proj-grid-->
+                </div> <!-- closes hero content-->
+            </div> <!-- closes container area -->
+
+    </main>
+
+    <footer>
+        <div>designed & coded by vivian jiang</div>
+    </footer>
+        <script>
+            var section_title = document.getElementsByClassName("sec_title");
+            var a;
+            for (a = 0; a < section_title.length; a++) {
+                section_title[a].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    }
+                    else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                })
+            }
+        </script>
+</body>
+    
+
+</html>
