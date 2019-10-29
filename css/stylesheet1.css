@@ -94,7 +94,7 @@ li a{
 }
 
 li a:hover{
-    color: #C4374D;
+    color: #3e60b5;
     cursor: pointer;
 }
 
@@ -103,19 +103,21 @@ p {
 }
 
 a{
-    color: #3e60b5;
+    color: #25428c;
     text-decoration: underline;
     display: inline;
 }
 
 a:hover{
-    color:#C4374D;
+    color:#5a73b1;
 }
 
-li[class="current"]{
-    color: #C4374D;
+li[class="current"] {
+    background-color: #FFA580;
+    color: #001397;
     list-style: none;  
 }
+
 
 /* li a[class="current"]{
     color: #C4374D;
@@ -225,7 +227,7 @@ a.skiplink:focus, a.skiplink:active{
     align-items: center;
 }
 
-.double > img{
+.double > img {
     object-fit: cover;
     width: 100%;
 }

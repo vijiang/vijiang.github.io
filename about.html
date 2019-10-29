@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Josefin+Sans|Montserrat+Subrayada&display=swap"
+        rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/0887f1b56b.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <a class="skiplink" href="#maincontent" tabindex="0">Skip to main content</a>
+    </header>
+    <div id="menu-header">
+        <div class="cat-align sec_title"><i class="fas fa-cat fa-lg"></i>
+            <!-- need to add menu accordion options here!! -->
+        </div>
+    </div>
+
+    <main id="maincontent">
+        <div id="container">
+            <div id="sidebar">
+                <h1 class="name-clear">Vivian Jiang</h1>
+                <div class="bio" area="sidebar">
+                    <p>MSI Student in UX Design at the University of Michigan.</p>
+                    <p>Feel free to <a href="mailto:vijiang@umich.edu">write to me</a> or to check out my <a
+                            href="docs/ViJiangResume072019.pdf">resume</a>.</p>
+                </div>
+                <div class="nav-bar" area="sidebar">
+                    <ul>
+                        <li class="nav-links"><a href="main.html">Index</a></li>
+                        <li class="nav-links" class="current">
+                            About
+                        </li>
+                        <li class="nav-links"><a class="sec_title">Selected Projects</a>
+                            <div class="proj_list">
+                                <ul>
+                                <li><a href="usability-testing.html">Autodesk: Learning & Onboarding<br><i>UX
+                                Research & Consulting</i></a>
+                                </li>
+
+                                <li><a href="film-grid.html">Modular Film Grid<br><i>Graphic Design</i></a></li>
+
+                                <li><a href="p4k-album-reviews.html">
+                                Pitchfork Album Reviews: 1000 Songs For You<br><i>Programming & UX
+                                Design</i></a></li>
+
+                                <li><a href="identity.html">Personal Identity Package<br>
+                                <i>Graphic Design</i></a></li>
+
+                                <li><a href="greensycle.html">Greensycle<br><i>UX Research & Design, Prototyping</i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-links"><a href="misc.html">Etc.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="hero-content">
+
+                <div class="intro">
+                    <div class="double">
+                        <div>
+                            <p>Hello! My name is Vivian. I'm currently a second year MSI student studying User Experience Design at the University of Michigan School of Information. I also have a BA in Economics, a minor in Creative Writing, and managed to snag a <a href="https://lsa.umich.edu/hopwood" target="_blank">Hopwood Award</a> for poetry.</p>
+                            <p>My interests lie in exploring the relationships between poetics, literature, and informational structures. I also hope to work towards the democratization of design, at the same time moving away from anthropocentrism and engaging with design justice.</p>
+                            <p>If you'd like, you can also find me on <a href="https://www.instagram.com/wasdreaming/" target="_blank">Instagram</a> and <a href="https://www.linkedin.com/in/v-jiang/" target="_blank">LinkedIn.</a></p>
+                            <p>Credits:<br>
+                            Emojis by <a href="https://afeld.github.io/emoji-css/" target="_blank">afeld</a></p>
+                        </div>
+                        <img src="images/museum.png" alt="me @ the national museum of western art in tokyo, 2018">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <script>
+            var section_title = document.getElementsByClassName("sec_title");
+            var a;
+            for (a = 0; a < section_title.length; a++) {
+                section_title[a].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    }
+                    else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                })
+            }
+        </script>
+
+    </footer>
+
+</body>
+
+</html>
