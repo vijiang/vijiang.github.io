@@ -336,4 +336,18 @@ div[area=sidebar]{
     padding-left: 15px;
 }
 
+.proj_list {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    margin-top: 5px;
+}
+
+.active .proj_list {
+    
+    max-height: 500px;
+    transition: max-height 0.25s ease-out;
+    margin-top: 5px;
+}
+
 }
