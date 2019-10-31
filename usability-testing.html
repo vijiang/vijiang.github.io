@@ -33,11 +33,11 @@
                 <p>Feel free to <a href="mailto:vijiang@umich.edu">write to me</a> or to check out my <a href="docs/ViJiangResume072019.pdf">resume</a>.</p></div>
                 <div class="nav-bar" area="sidebar">
                     <ul>
-                        <li class="nav-links"><a href="main.html">Index</a></li>
-                        <li class="nav-links">
+                        <li class="nav-links" type="navbar"><a href="main.html">Index</a></li>
+                        <li class="nav-links" type="navbar">
                             <a href="about.html">About</a>
                         </li>
-                        <li class="nav-links"><a class="sec_title">Selected Projects</a>
+                        <li id="openclose" class="nav-links active onpage" type="navbar"><a class="sec_title">Selected Projects</a>
                             <div class="proj_list">
                                 <ul>
                                 <li class="current">Autodesk: Learning & Onboarding<br><i>UX Research & Consulting</i>
@@ -51,11 +51,10 @@
                                 <li><a href="identity.html">Personal Identity Package<br>
                                 <i>Graphic Design</i></a></li>
                             
-                                <li><a href="greensycle.html"></a>Greensycle<br><i>UX Research & Design, Prototyping</i></a></li>
+                                <li><a href="greensycle.html">Greensycle<br><i>UX Research & Design, Prototyping</i></a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-links"><a href="misc.html">Etc.</a></li>
                     </ul>
                 </div>
             </div>
@@ -73,14 +72,14 @@
                         </p>
                         <div class="proj-blck-spcing">
                             <ol>
-                                <li>Stakeholder interviews</li>
+                                <li><a href="#stakeints">Stakeholder interviews</a></li>
                                 <li><a href="#intmap">Interaction maps</a></li>
-                                <li>User invterviews</li>
-                                <li>Comparative analysis</li>
-                                <li>Heuristic evaluations</li>
-                                <li>Surveys</li>
-                                <li>Preference testing</li>
-                                <li>Usability testing</li>
+                                <li><a href="#userints">User invterviews</a></li>
+                                <li><a href="#compeval">Comparative analysis</a></li>
+                                <li><a href="#hevals">Heuristic evaluations</a></li>
+                                <li><a href="#surveys">Surveys</a></li>
+                                <li><a href="#preftests">Preference testing</a></li>
+                                <li><a href="#ustests">Usability testing</a></li>
                             </ol>
                         </div>
 
@@ -88,14 +87,14 @@
                         </div> <!-- closes proj-title proj-blck-spcing-->
                     
                     <div class="proj-blck-spcing">
-                        <h2>Stakeholder Interviews</h2>
+                        <h2 id="stakeints">Stakeholder Interviews</h2>
                         <br>
                         <p>We began by conducting video interviews with several members of Autodesk's team -- including our two primary contacts, a Senior Learning Content Developer and an Experience Design Architect -- who were concerned with our target product. These preliminary interviews enabled us to properly gauge our scope in terms of what elements of Revit LT's learning and onboarding system we were to focus on: tutorials, essential skills videos, and sample models. 
                         <p>Our contacts emphasized their particular interest in the effectiveness of the program's videos and tutorials, but were also open to other critiques that may be valuable for the system.</p></p>
                     </div> <!-- closes stakeholder interviews-->
 
                     <div class="proj-blck-spcing">
-                        <h2 id="#intmap">Interaction Map</h2>
+                        <h2 id="intmap">Interaction Map</h2>
                         <br>
                         <p>
                             We first began with a high-level overview of the Revit LT software and its related documentation, then generated a static representation of the relevant structures in the form of an interaction map.
@@ -106,7 +105,7 @@
                     </div> <!-- closes interaction map-->
 
                     <div class="proj-blck-spcing">
-                        <h2>User Interviews</h2>
+                        <h2 id="userints">User Interviews</h2>
                         <br>
                         <p>
                             The next phase saw our team conducting semi-structured interviews with a selected group of participants who possessed varying levels of experience in computer-aided design in the field of architecture. In total, we conducted five interviews with each lasting around 30-60 minutes. 
@@ -118,28 +117,28 @@
                         <img src="images/sara_persona_2.png" alt="Sara Ji - Revit LT Persona (2/2)">
                     </div> <!-- closes user interviews & persona-->
                     <div class="proj-blck-spcing">
-                        <h2>Comparative Analysis</h2>
+                        <h2 id="compeval">Comparative Analysis</h2>
                         <br>
                         <p>We then researched and evaluated five competitor products in order to compare the online learning materials and processes that each software offered. This culminated in a matrix that highlighted various strenths and weaknesses of the different programs (with a focus on their videos and tutorials) as well as as series of preliminary findings and recommendations.</p>
                         <br>
                         <img src="images/companalysis.png" alt="Comparative analysis: 5 different progams">
                     </div> <!-- closes comp. analysis-->
                     <div class="proj-blck-spcing">
-                        <h2>Heuristic Evaluation</h2>
+                        <h2 id="hevals">Heuristic Evaluation</h2>
                         <br>
                         <p>Next, we utilized heuristic evaluation methods, based on Jakob Nielsen’s 10 principles of interaction design, to assess the information structure of the Revit documentation site.</p>
                         <p>After we individually recorded the results of the evaluation as written reports, we made a spreadsheet which includes heuristic numbers and findings in each criteria with comments and severity ratings on a numerical scale of 1-5. Once each comment was rated, we aggregated the findings that had the highest rates.</p>
                         <br>
                     </div> <!-- closes heuristics -->
                     <div class="proj-blck-spcing">
-                        <h2>Surveys</h2>
+                        <h2 id="surveys">Surveys</h2>
                         <br>
                         <p>For our surveys, we sought data from both professional and student architects regarding demographic details about users, their opinions on Revit’s help documentation and onboarding materials, and also more general preferences regarding methods of online learning.</p>
                         <p>Our survey was live for 10 days and received 63 responses.</p>
                         <img src="images/survey_shot.png" alt="Mobile and desktop versions of our survey" width="90%">
                     </div> <!-- closes surveys -->
                     <div class="proj-blck-spcing">
-                        <h2>Preference Testing</h2>
+                        <h2 id="preftests">Preference Testing</h2>
                         <br>
                         <p>Next, preference tests were conducted out in order assess user reactions to changes made with these evaluations in mind. Selected users were asked for their preferences and opinions about current implementations and their mocked-up prototype
                         counterparts.
@@ -153,7 +152,7 @@
                         <br>
                     </div> <!-- closes preference testing -->
                     <div class="proj-blck-spcing">
-                        <h2>Usability Testing</h2>
+                        <h2 id="ustests">Usability Testing</h2>
                         <br>
                         <p>Finally, we conducted five usability tests for the current software and documentation site. Our goal was to evaluate if users could successfully and efficiently navigate to the documentation they need from inside the software, as well as around the website it lives on. We gave each user four tasks to complete. <p>Throughout the duration of the testing, our members observed, moderated, and data logged for the participants (example below). Each individual test lasted from 30 minutes to an hour.</p>
                         </p>
@@ -193,22 +192,13 @@
     <footer>
         <div>designed & coded by vivian jiang</div>
     </footer>
-        <script>
-            var section_title = document.getElementsByClassName("sec_title");
-            var a;
-            for (a = 0; a < section_title.length; a++) {
-                section_title[a].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    }
-                    else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                })
-            }
-        </script>
+<script>
+    var clicktitle = document.getElementById("openclose");
+    clicktitle.addEventListener("click",
+        function handleClick() {
+            this.classList.toggle("active");
+        });
+</script>
 </body>
     
 

@@ -33,12 +33,12 @@
                 <p>Feel free to <a href="mailto:vijiang@umich.edu">write to me</a> or to check out my <a href="docs/ViJiangResume072019.pdf">resume</a>.</p></div>
                 <div class="nav-bar" area="sidebar">
                     <ul>
-                        <li class="nav-links" ><a href="main.html">Index</a></li>
-                        <li class="nav-links">
+                        <li class="nav-links" type="navbar"><a href="main.html">Index</a></li>
+                        <li class="nav-links" type="navbar">
                             <a href="about.html">About</a>
                         </li>
-                        <li class="nav-links"><a class="sec_title">Selected Projects</a>
-                            <div class="proj_list">
+                        <li id="openclose" class="nav-links active onpage" type="navbar"><a class="sec_title">Selected Projects</a> <!-- header of panel-->
+                            <div class="proj_list"> <!-- body of panel -->
                             <ul>
                                 <li><a href="usability-testing.html">Autodesk: Learning & Onboarding<br><i>UX Research & Consulting</i></a>
                                 </li>
@@ -55,8 +55,6 @@
                             </ul>
                             </div>
                         </li>
-
-                        <li class="nav-links"><a href="misc.html">Etc.</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,7 +69,7 @@
                         <br>
                         <b>Role:</b> User researcher, UX/UI designer, prototyper
                         <br><br>
-                        With this design project, my goal was to address the problems and incorrect recycling practices that can arise when the information and regulations of Ann Arbor’s curbside recycling program are not well known. I hope to better inform residents of what can and cannot be recycled, and to also suggest means for the collective recycling of items that are not able to be placed in convenient curbside bins (such as plastic bags, thermal papers, and certain types of packing
+                        With this design project, my goal was to address the problems from incorrect recycling practices that can arise when the information and regulations of Ann Arbor’s curbside recycling program are not well known. I hope to better inform residents of what can and cannot be recycled, and to also suggest means for the collective recycling of items that are not able to be placed in convenient curbside bins (such as plastic bags, thermal papers, and certain types of packing
                         materials).
                     </p></div>
 
@@ -164,22 +162,11 @@
 <footer>
     design & coded by vivian jiang
         <script>
-            var section_title = document.getElementsByClassName("sec_title");
-            var a;
-            for (a = 0; a < section_title.length; a++) {
-                section_title[a].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        console.log("true", panel.style.maxHeight)
-                        panel.style.maxHeight = null;
-                    }
-                    else {
-                        console.log("else")
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                })
-            }
+            var clicktitle = document.getElementById("openclose");
+            clicktitle.addEventListener("click", 
+            function handleClick() {
+                this.classList.toggle("active");
+            });
         </script>
     </footer>
 

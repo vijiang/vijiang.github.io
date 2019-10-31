@@ -90,7 +90,7 @@ li a{
     height: 100%;
     position: relative;
     text-decoration: none;
-    color: #000000;
+    color: #25428c;
 }
 
 li a:hover{
@@ -99,32 +99,35 @@ li a:hover{
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 a{
-    color: #25428c;
+    color: #001397;
     text-decoration: underline;
     display: inline;
 }
 
 a:hover{
-    color:#5a73b1;
+    color:#5c7bca;
 }
 
-li[class="current"] {
+li.current{
     background-color: #FFA580;
     color: #001397;
     list-style: none;  
 }
 
-
-/* li a[class="current"]{
-    color: #C4374D;
+li[type="navbar"] a{
+    color: #000000;
     list-style: none;  
-} */
+}
 
-li a:before {
+li[type="navbar"] a:hover{
+    color: #5c7bca;
+}
+
+li[type="navbar"] a:before {
     content: "";
     width: 100%;
     position: absolute;
@@ -140,20 +143,24 @@ li a:before {
     transform-origin: left;
 }
 
-li a:hover:before{
+li[type="navbar"] a:hover:before{
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-li[class="nav-links"]{
+li.nav-links{
     list-style: none;
 }
 
-li[class="nav-links"]:hover{
+li.nav-links:hover{
     /* background-color: antiquewhite; */
     -webkit-transition: all 0.20s ease-in-out 0s;
     transition: all 0.20s ease-in-out 0s;
+}
+
+li.onpage{
+    list-style-type: circle;
 }
 
 
@@ -193,7 +200,6 @@ a.skiplink:focus, a.skiplink:active{
     width: 800px;
     /* background-color: bisque; */
 }
-
 
 .proj-grid{
     display: flex;
@@ -270,15 +276,17 @@ div[area=sidebar]{
     margin-top:15px;
 }
 
-.proj_list{
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.25s ease-out;
-  margin-top: 5px;
+.proj_list {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    margin-top: 5px;
 }
 
-.proj_list_current{
-    max-height: auto;
+.active .proj_list {
+    max-height: 500px;
+    transition: max-height 0.25s ease-out;
+    margin-top: 5px;
 }
 
 
