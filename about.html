@@ -89,25 +89,24 @@
 
     </main>
     <footer>
-        <script>
-            var section_title = document.getElementsByClassName("sec_title");
-            var a;
-            for (a = 0; a < section_title.length; a++) {
-                section_title[a].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    }
-                    else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                })
-            }
-        </script>
-
+        <div>designed & coded by vivian jiang</div>
     </footer>
-
+<script>
+    var section_title = document.getElementsByClassName("sec_title");
+    var a;
+    for (a = 0; a < section_title.length; a++) {
+        section_title[a].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            }
+            else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        })
+    }
+</script>
 </body>
 
 </html>
