@@ -35,7 +35,7 @@ h1{ /* for name in column, main headers*/
     font-family: 'Montserrat Subrayada', sans-serif;
     /* font-style: italic; */
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: lighter;
     color: #000000;
     line-height: 100%;
@@ -104,6 +104,19 @@ a{
     display: inline;
 }
 
+.name-clear{
+    line-height: initial;
+}
+
+a.name-clear{
+    color: #000000;
+    text-decoration: none;
+}
+
+a.name-clear:hover{
+    color: #001397;
+}
+
 a:hover{
     color:#5c7bca;
 }
@@ -159,7 +172,6 @@ li.onpage{
     list-style-type: circle;
 }
 
-
 a.skiplink{
   position: relative;
   top: -80px;
@@ -181,7 +193,7 @@ a.skiplink:focus, a.skiplink:active{
 }
 
 #sidebar{
-    width: 270px;
+    width: 280px;
     margin-top: 25px;
     /* background-color: aquamarine; */
 }
@@ -264,10 +276,6 @@ div[area=sidebar]{
     padding: 10px 0px 10px 15px;
 }
 
-.name-clear{
-    line-height: initial;
-}
-
 .bio{
     margin-top:15px;
 }
@@ -285,6 +293,14 @@ div[area=sidebar]{
     margin-top: 5px;
 }
 
+.title-index{
+    padding: 10px;
+}
+
+.title-index:hover{
+    background-color: #FFA580;
+    
+}
 
 @media (max-width: 750px)
 {
