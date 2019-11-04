@@ -14,10 +14,6 @@ body {
     overflow: auto;
 }
 
-main {
-    /* background-color: cadetblue; */
-}
-
 footer{
     display: flex;
     padding: 30px;
