@@ -35,7 +35,7 @@
                 <div class="bio" area="sidebar">
                     <p>MSI Student in UX Design at the University of Michigan.</p>
                     <p>Feel free to <a href="mailto:vijiang@umich.edu">write to me</a> or to check out my <a
-                            href="docs/ViJiangResume072019.pdf">resume</a>.</p>
+                            href="docs/ViJiangResume20191103.pdf">resume</a>.</p>
                 </div>
                 <div class="nav-bar" area="sidebar">
                     <ul>
@@ -43,7 +43,7 @@
                         <li class="nav-links" type="navbar">
                             <a href="about.html">About</a>
                         </li>
-                        <li class="nav-links" type="navbar"><a class="sec_title">Selected Projects</a>
+                        <li class="nav-links active onpage" type="navbar"><a class="sec_title">Selected Projects</a>
                             <div class="proj_list">
                                 <ul>
 
@@ -92,22 +92,13 @@
     <footer>
         <div>designed & coded by vivian jiang</div>
     </footer>
-    <script>
-        var section_title = document.getElementsByClassName("sec_title");
-        var a;
-        for (a = 0; a < section_title.length; a++) {
-            section_title[a].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                }
-                else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            })
-        }
-    </script>
+<script>
+    var clicktitle = document.getElementById("openclose");
+    clicktitle.addEventListener("click",
+        function handleClick() {
+            this.classList.toggle("active");
+        });
+</script>
 </body>
 
 
