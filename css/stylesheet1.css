@@ -30,6 +30,34 @@ i {
     font-style: italic;
 }
 
+.sticky-bar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    animation: loop-fade 20s infinite;
+}
+
+@keyframes loop-fade {
+    0% {
+        background:#ffa580;
+    }
+    25% {
+        background:#ff9a80;
+    }
+    50% {
+        background:#ff9080;
+    }
+
+    75% {
+        background:#ff8580;
+    }
+    
+    100%{
+        background:#ffa580;
+    }
+}
+
 h1{ /* for name in column, main headers*/
     display: block;
     font-family: 'Montserrat Subrayada', sans-serif;
