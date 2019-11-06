@@ -239,6 +239,10 @@ a.skiplink:focus, a.skiplink:active{
     /* background-color: bisque; */
 }
 
+#hero-content[type="index"]{
+    margin: 25px 0px 50px 50px;
+}
+
 .proj-grid{
     display: flex;
     flex-direction: column;
