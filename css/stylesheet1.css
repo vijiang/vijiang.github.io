@@ -330,7 +330,7 @@ div[area=sidebar]{
     
 }
 
-@media (max-width: 750px)
+/* @media (max-width: 750px)
 {
 
     header {
@@ -390,4 +390,4 @@ div[area=sidebar]{
     margin-top: 5px;
 }
 
-}
+} */
