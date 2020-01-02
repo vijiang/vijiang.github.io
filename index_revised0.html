@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/0887f1b56b.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133814555-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133814555-2');
+    </script>
+    <title>Vivian Jiang - Index</title>
+</head>
+
+<body>
+        <header>
+            <a class="skiplink" href="#maincontent" tabindex="0">Skip to main content</a>
+            <div class="sticky-bar"></div>
+        </header>
+        <div id="menu-header">
+            <div class="cat-align sec_title"><i class="fas fa-cat fa-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i></div>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <li class="nav-links onpage" type="navbar"><a href="index.html">Index</a></li>
+                    <li class="nav-links" type="navbar"> <a href="about.html">About</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <main id="maincontent">
+        <div id="container">
+        <div id="sidebar">
+            <div class="title-index"><h1 class="name-clear"><a href="index.html" class="name-clear">Vivian Jiang</a></h1></div>
+            <div class="bio" area="sidebar">
+                <p>MSI Student in UX Design at the University of Michigan.</p>
+                <p>Feel free to <a href="mailto:vijiang@umich.edu">write to me</a> or to check out my <a href="docs/ViJiangResume20191103.pdf">resume</a>.</p>
+            </div>
+            <div class="nav-bar" area="sidebar">
+                <ul>
+                    <li class="nav-links onpage" type="navbar"><a href="index.html">Index</a></li>
+                    <li class="nav-links" type="navbar">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-links" type="navbar"><a class="sec_title">Selected Projects</a>
+                            <div class="proj_list">
+                            <ul>
+
+                                <li><a href="driveithome.html">Rocket Mortage: Drive It Home Sweepstakes<br><i>UX Design & Protoyping</i></a>
+                                </li>
+
+                                <li><a href="usability-testing.html">Autodesk: Learning & Onboarding<br><i>UX Research & Consulting</i></a>
+                                </li>
+
+                                <li><a href="film-grid.html">Modular Film Grid<br><i>Graphic Design</i></a></li>
+                                
+                                <li><a href="p4k-album-reviews.html">
+                                Pitchfork Album Reviews: 1000 Songs For You<br><i>Programming & UX Design</i></a></li>
+
+                                <li><a href="identity.html">Personal Identity Package<br>
+                                <i>Graphic Design</i></a></li>
+                                
+                                <li><a href="greensycle.html">Greensycle<br><i>UX Research & Design, Prototyping</i></a></li>
+                            </ul>
+                        </div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="hero-content" type="index">
+            
+            <div class="intro">
+                <p><h1>Hi, hello, 你好.</h1></p>
+                <p>My name is Vivian & I'm a second year master's student studying User Experience Design at the University of Michigan School of Information.</p>
+                <p>Currently, I'm interested in exploring the relationships between poetics, literature, and informational structures, as well as the methods through which we can reclaim our attention from the pitfalls of persuasive design.</p>
+                <br>
+                <h3>Works in progress:</h3>
+                <ul>
+                    <li>An interactive museum exhibit design focusing on "hyphenated" American identities and the role of food in celebrations.</li>
+                    <li>Losing clock time inside audio boundaries & in the form of a Max patch.</li>
+                    <li>Stress management & self-harm prevention through behavioural change techniques in a mobile application.</li>
+                    <li><i>gloaming</i>: a digital art & literature zine created as a personal project between three close friends.</li>
+                </ul>
+                <br>
+                <p>Thanks for stopping by! <i class="em em-wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i></p>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+        </main>
+    <footer>
+    <div>designed & coded by vivian jiang</div>
+    </footer>
+    <script>
+        var section_title = document.getElementsByClassName("sec_title");
+        var a;
+        for (a = 0; a < section_title.length; a++) {
+            section_title[a].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                }
+                else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>
