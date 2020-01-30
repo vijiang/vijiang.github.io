@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Inconsolata|ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/pixil-frame-1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/pixil-frame-0.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/0887f1b56b.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133814555-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133814555-2');
+    </script>
+    <title>Portfolio - 1000 Songs For You</title>
+</head>
+
+<body>
+    <header>
+        <a class="skiplink" href="#maincontent" tabindex="0">Skip to main content</a>
+    </header>
+    <div class="sticky-bar">
+        <a class="tiny-box" href="index.html">&#x2190; back to index</a>
+        <div class="tiny-box header-link-class sec-title">1000 songs for you</div>
+        <a class="tiny-box" href="mailto:vijiang@umich.edu">contact</a>
+    </div>
+    <!-- <div id="menu-header">
+        <div class="cat-align sec_title"><i class="fas fa-cat fa-lg" type="button" data-toggle="collapse"
+                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i></div>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+               <ul>
+                    <li class="nav-links onpage navbar"><a class ="sec-title">Index</a></li>
+                    <li class="nav-links navbar"> <a href="about.html">About</a>
+                    </li>
+               </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <main id="maincontent">
+        <div id="container">
+            <div id="project-content">
+                <div class="proj-page-section">
+                    <h1>Under Construction - come back soon!</h1>
+                    <p>To see an archived version of this page, please click <a href="p4k-album-reviews.html">here</a>.</p>
+                </div>
+
+            </div> <!-- closes project-content-->
+            </div> <!-- closes container --> 
+    </main>
+    <footer>
+        <div><span class="highlight">(c) vivian jiang</span></div>
+    </footer>
+
+    <script>
+        var section_title = document.getElementsByClassName("sec-title");
+        var a;
+        for (a = 0; a < section_title.length; a++) {
+            section_title[a].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                }
+                else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>
