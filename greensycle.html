@@ -8,10 +8,10 @@
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/0887f1b56b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/pixil-frame-1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/pixil-frame-0.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133814555-2"></script>
     <script>
@@ -28,53 +28,28 @@
 <body>
     <header>
         <a class="skiplink" href="#maincontent" tabindex="0">Skip to main content</a>
-        <div class="sticky-bar"></div>
     </header>
+    <div class="sticky-bar">
+        <div class="tiny-box">vivan jiang</div>
+        <div><a class="tiny-box header-link-class" href="/">greensycle <i class="fas fa-angle-down"></i></a></div>
+        <div class="tiny-box">contact</div>
+    </div>
     <div id="menu-header">
-        <div class="cat-align sec_title"><i class="fas fa-cat fa-lg"></i>
-            <!-- need to add menu accordion options here!! -->
+        <div class="cat-align sec_title"><i class="fas fa-cat fa-lg" type="button" data-toggle="collapse"
+                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i></div>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <ul>
+                    <li class="nav-links onpage navbar"><a href="index.html">Index</a></li>
+                    <li class="nav-links navbar"> <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <main id="maincontent" tabindex="-1"> <!-- maybe move this to around the body? -->
+
+    <main id="maincontent">
         <div id="container">
-            <div id="sidebar">
-                    <div class="title-index">
-                        <h1 class="name-clear"><a href="index.html" class="name-clear">Vivian Jiang</a></h1>
-                    </div>
-                <div class="bio" area="sidebar"><p>MSI Student in UX Design at the University of Michigan.</p>
-                <p>Feel free to <a href="mailto:vijiang@umich.edu">write to me</a> or to check out my <a href="docs/ViJiangResume20191103.pdf">resume</a>.</p></div>
-                <div class="nav-bar" area="sidebar">
-                    <ul>
-                        <li class="nav-links" type="navbar"><a href="index.html">Index</a></li>
-                        <li class="nav-links" type="navbar">
-                            <a href="about.html">About</a>
-                        </li>
-                        <li id="openclose" class="nav-links active onpage" type="navbar"><a class="sec_title">Selected Projects</a> <!-- header of panel-->
-                            <div class="proj_list"> <!-- body of panel -->
-                            <ul>
-
-                                <li><a href="driveithome.html">Rocket Mortage: Drive It Home Sweepstakes<br><i>UX Design & Protoyping</i></a>
-                                </li>
-
-                                <li><a href="usability-testing.html">Autodesk: Learning & Onboarding<br><i>UX Research & Consulting</i></a>
-                                </li>
-
-                                <li><a href="film-grid.html">Modular Film Grid<br><i>Graphic Design</i></a></li>
-
-                                <li><a href="p4k-album-reviews.html">
-                                Pitchfork Album Reviews: 1000 Songs For You<br><i>Programming & UX Design</i></a></li>
-
-                                <li><a href="identity.html">Personal Identity Package<br>
-                                <i>Graphic Design</i></a></li>
-
-                                <li class="current">Greensycle<br><i>UX Research & Design, Prototyping</i></li>
-                            </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
             <div id="hero-content"> <!-- start hero content area-->
                 <div class="proj-grid">
                     <div class="proj-title proj-blck-spcing">
@@ -122,7 +97,7 @@
                             <h2>Paper Prototype</h2>
                         </div>
                         <br><br>
-                        <video src="videos/paper_prototype.mp4" width="auto" height="500" controls></video>
+                        <video src="videos/paper_prototype.mp4" width="600" height="auto" controls></video>
                         <div class="proj-blck-spcing">
                             <h2>Design Rationale</h2><br>
                             <p>
@@ -146,6 +121,9 @@
                                 </p>
                             </div>
                         </div> <!--closes Solution section-->
+                        <div>
+                            <video src="videos/gs-neighborhood.mp4" width="300" height="auto" autoplay loop></video>
+                        </div>
                         <div class="gs-blck-spcing flex-features">
                                 <div>
                                 <h2>Application Features</h2>
@@ -162,9 +140,6 @@
 
                                     <p>The application’s distinguishing feature can be accessed inside the main menu. From the map that opens, users can view their current location, as well as the relative locations of other Ann Arbor residents who are using the app. By clicking on the dropped points on the nap, the user can create their own neighborhood events (such as drop-offs), or check if any of their neighbors are planning something for the future. </p>
                                 </p>
-                            </div>
-                            <div>
-                                <video src="videos/gs-neighborhood.mp4" width ="300" height="auto" autoplay loop></video>
                             </div>
                         </div> <!-- gs-blck-spcing flex-features -->
                     </div> <!-- closes proj-grid-->
