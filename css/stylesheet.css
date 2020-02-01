@@ -69,11 +69,9 @@ a.tiny-box:hover{
 
 h1{ /* for name in column, main headers*/
     display: block;
-    font-family: 'Bungee Hairline', monospace;
-    /* font-style: italic; */
-    /* text-transform: uppercase; */
+    font-family: 'DM Serif Text', serif;
+    letter-spacing: 1px;
     font-size: 3rem;
-    /* font-weight: bold; */
     color: #000000;
     line-height: 100%;
     /* transform: rotate(-5deg); */
