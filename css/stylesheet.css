@@ -136,10 +136,6 @@ p {
     margin-bottom: 20px;
 }
 
-.ni-hao{
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
-}
-
 a{
     /* color: #001397; */
     /* text-decoration: underline; */
@@ -185,6 +181,10 @@ img {
     display:block;
     width: 100%;
     height: auto;
+}
+
+img.icons{
+    display: inline;
 }
 
 #container{
