@@ -53,8 +53,43 @@
         <div id="container">
             <div id="project-content">
                 <div class="proj-page-section">
-                    <h1>Under Construction - come back soon!</h1>
-                    <p>To see an archived version of this page, please click <a href="p4k-album-reviews.html">here</a>.</p>
+                    <h1>Pitchfork Album Reviews: Caribou's <i>1000 Songs For You</i></h1>
+                    <div class="inner-section-spacing"></div>
+                    <p>
+                    <i>Using Python, Flask, SQLAlchemy, and Spotify's API</i>
+                    <br>
+                    <b>Role:</b> UX/UI designer, program developer
+                    <br><br>
+                    This project requests data about Caribou's playlist, <i>The Longest Mixtape: 1000 Songs for You</i>, from Spotify, via
+                    their API, and stores those tracks in a database using SQLAlchemy.
+                    <p>Users will be able to check to see if certain songs or artists are in that playlist by entering a title or artist name as part of a Flask route: if a song is in the playlist the application will also return Pitchfork’s rating of the album the song is present on, if available; If an artist is in the playlist, the application will return the song(s) present by the artist.</p>
+                    <p>This program was developed as a final project for a master's course (SI 507: Intermediate Python Programming).
+                    <br><br>
+                    Link to this repository on GitHub: <a target="_blank" href="https://github.com/vijiang/507_final_project">here</a>
+                    </p>
+                </div> <!-- closes overview -->
+                <div class="proj-page-section">
+                    <h2>Screenshots</h2>
+                    <p>The following are examples of the program running through various pathways provided by the user.</p>
+                    <h3>Route 1:</h3>
+                    <p>/ → shows you a greeting + gives instructions on how to user should enter information</p>
+                    <img src="images/p4kArtboard-1.png" alt="Route 1 - Home screen">
+                    <h3>Route 2:</h3>
+                    <p>/check/song/&lt;trackname&gt; → checks if a certain track exists in the database/playlist
+                    </p>
+                    <img src="images/p4kArtboard-2.png" alt="Route 2 - Track name search">
+                    <h3>Route 3:</h3>
+                    <p>/check/artist/&lt;artistname&gt; → checks if tracks by a given artist exist in the database/playlist
+                    </p>
+                    <img src="images/p4kArtboard-3.png" alt="Route 3 - Artist name search">
+                    <h3>Error messages:</h3>
+                    <p>To provide error prevention/recovery in the case that incorrect or unusable information is provided.</p>
+                    <img src="images/p4kArtboard-4.png" alt="Error message 1">
+                    <img src="images/p4kArtboard-5.png" alt="Error message 2">
+                </div> <!-- closes screenshots-->
+                <div class="proj-page-section">
+                    <h2>Future considerations</h2><br>
+                    <p>I'd love to create a version of this script that reversed the general process: a user could search a track title and a list of the user's playlists (owned or followed)containing that track would be returned. (I have a lot of playlists, and this modification would be both incredibly self-indulgent and rewarding <i class="em em-innocent" aria-label="SMILING FACE WITH HALO"></i>). </p>
                 </div>
 
             </div> <!-- closes project-content-->
