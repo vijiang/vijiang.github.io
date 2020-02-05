@@ -10,7 +10,7 @@ body {
     color: #4b4b4b;
     box-sizing: border-box;
     position: relative;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 200px;
@@ -53,6 +53,10 @@ i {
     /* justify-content: space-between;
     align-items: center; */
     font-size: 1rem;
+}
+
+.sticky-bar-sub{
+    height: 30px;
 }
 
 .tiny-box{
