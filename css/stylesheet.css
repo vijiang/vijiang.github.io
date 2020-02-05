@@ -458,6 +458,7 @@ h3 {
     padding: 10px 20px 10px 20px;
     border: 0.5px solid black;
     justify-content: center;
+    width: auto;
 }
 
 .proj-grid-title {
