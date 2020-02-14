@@ -329,7 +329,8 @@ img.icons{
 }
 
 .three > img {
-    padding-bottom: 25px;
+    height: auto;
+    width: 100%;
 }
 
 .proj-photo-grid {
