@@ -478,6 +478,7 @@ h3 {
     margin: 0;
     padding: 50px;
     position: relative;
+    min-height: 400px;
 }
 
 .hero-content{
