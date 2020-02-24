@@ -128,7 +128,9 @@ ol{
 }
 
 li {
-    padding: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 li a{
@@ -420,6 +422,10 @@ h2 {
 
 h3 {
     font-size: 2rem;
+}
+
+ul{
+    margin-left: 10px;
 }
 
 #container{
