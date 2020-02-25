@@ -489,7 +489,7 @@ ul{
 
 .hero-content{
     margin: 90px 0px 30px;
-    width: 100%;
+    width: auto;
     align-items: center;
     padding: 30px;
 }
