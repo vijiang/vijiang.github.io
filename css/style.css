@@ -94,7 +94,7 @@ img.error {
 
 
 #container{
-    width: 85vw;
+    width: 80vw;
     height: auto;
     margin: 50px auto;
     display: flex;
@@ -326,7 +326,7 @@ img.error {
     .index{
         /* width: 1200px; */
         display:grid;
-        grid-template-columns: repeat(3, 370px);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
         grid-auto-rows: 370px;
     }
