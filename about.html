@@ -4,121 +4,47 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Josefin+Sans|Montserrat+Subrayada&display=swap"
-        rel="stylesheet">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133814555-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-133814555-2');
-    </script>
-    <script src="https://kit.fontawesome.com/0887f1b56b.js" crossorigin="anonymous"></script>
-    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <title>About - Vivian Jiang</title>
 </head>
 
-<body>
-    <header>
-        <a class="skiplink" href="#maincontent" tabindex="0">Skip to main content</a>
-        <div class="sticky-bar"></div>
-    </header>
-    <div id="menu-header">
-        <div class="cat-align sec_title"><i class="fas fa-cat fa-lg"></i>
-            <!-- need to add menu accordion options here!! -->
-        </div>
-    </div>
-
-    <main id="maincontent">
-        <div id="container">
-            <div id="sidebar">
-                <div class="title-index">
-                    <h1 class="name-clear"><a href="index.html" class="name-clear">Vivian Jiang</a></h1>
-                </div>
-                <div class="bio" area="sidebar">
-                    <p>MSI Student in UX Design at the University of Michigan.</p>
-                    <p>Feel free to <a href="mailto:vijiang@umich.edu">write to me</a> or to check out my <a
-                            href="docs/ViJiangResume20191103.pdf">resume</a>.</p>
-                </div>
-                <div class="nav-bar" area="sidebar">
-                    <ul>
-                        <li class="nav-links" type="navbar"><a href="index.html">Index</a></li>
-                        <li class="nav-links onpage type="navbar"">
-                            About
-                        </li>
-                        <li class="nav-links" type="navbar"><a class="sec_title">Selected Projects</a>
-                            <div class="proj_list">
-                                <ul>
-                                <li><a href="driveithome.html">Rocket Mortage: Drive It Home Sweepstakes<br><i>UX Design & Protoyping</i></a>
-                                </li>
-
-                                <li><a href="usability-testing.html">Autodesk: Learning & Onboarding<br><i>UX
-                                Research & Consulting</i></a>
-                                </li>
-
-                                <li><a href="film-grid.html">Modular Film Grid<br><i>Graphic Design</i></a></li>
-
-                                <li><a href="p4k-album-reviews.html">
-                                Pitchfork Album Reviews: 1000 Songs For You<br><i>Programming & UX
-                                Design</i></a></li>
-
-                                <li><a href="identity.html">Personal Identity Package<br>
-                                <i>Graphic Design</i></a></li>
-
-                                <li><a href="greensycle.html">Greensycle<br><i>UX Research & Design, Prototyping</i></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="hero-content">
-
-                <div class="intro">
-                    <div class="double">
-                        <div>
-                            <p>Hello! My name is Vivian. I'm currently a second year MSI student studying User Experience Design at the University of Michigan School, where I also earned a BA in Economics, a minor in Creative Writing, and won a <a href="https://lsa.umich.edu/hopwood" target="_blank">Hopwood Award</a> for poetry.</p>
-                            <p>My interests lie in exploring the relationships between poetics, literature, and informational structures. I also hope to work towards the democratization of design, at the same time moving away from anthropocentrism and engaging with design justice.</p>
-                            <p>If you'd like, you can also find me on <a href="https://www.instagram.com/wasdreaming/" target="_blank">Instagram</a> and <a href="https://www.linkedin.com/in/v-jiang/" target="_blank">LinkedIn.</a></p>
-                            <p>Credits:<br>
-                            Emojis by <a href="https://afeld.github.io/emoji-css/" target="_blank">afeld</a></p>
-                        </div>
-                        <img src="images/museum.png" alt="me @ the national museum of western art in tokyo, 2018">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-    <footer>
-        <div>designed & coded by vivian jiang</div>
-    </footer>
-<script>
-    var section_title = document.getElementsByClassName("sec_title");
-    var a;
-    for (a = 0; a < section_title.length; a++) {
-        section_title[a].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            }
-            else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        })
-    }
+<body><script>
+    document.body.className = "fade";
 </script>
+
+    <main>
+        <div id="container">
+            <div class="content-wrapper max-width-800px">
+                <div class="back-link"><a href="index.html" class='intro'>← back to index</a></div>
+                <div>
+                    <p class="name-space">About</p>
+                </div>
+                <div>
+                    <p>Hi! I'm Vivian.</p>
+                    <p>I'm currently a UX Designer at the Gerald R. Ford School of Public Policy, and a recent graduate from the University of Michigan with an MS in Human-Computer Interaction. </p>
+                    <p>Prior to design I studied economics and poetry, from which developed a keen eye for uncovering and analysing unspoken ideas. I consider the creation of poetic structures an integral part of all coherent designs, and I work to craft experiences that are rooted in empathy, diversity, and delight.</p>
+                <p>
+                    I also love <a href="https://bandcamp.com/vijiang" target="_blank">music</a>, <a href="https://mubi.com/users/6735197" target="_blank">movies</a>, writing (my work has won two <a href="https://lsa.umich.edu/hopwood/contests-prizes/contest-winners.html" target="_blank">Hopwood Awards</a>), and melons (especially canteloupe 🍈).
+                </p>
+                <p>You can also connect with me on <a href="https://www.linkedin.com/in/v-jiang/" target="_blank">LinkedIn</a>.</p>
+            </div>
+                    
+            </div> <!-- close content-wrapper -->
+        </div> <!-- closes container -->
+        </main><script src="js/randomImage.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (e) {
+            document.body.className = '';
+        });
+    </script>
+
 </body>
+<footer><div><a href="mailto:vijiang.umich.edu">get in touch!</a></footer>
 
 </html>
