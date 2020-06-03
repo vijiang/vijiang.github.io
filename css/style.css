@@ -229,9 +229,17 @@ img.error {
     height: 100%;
 }
 
-    .title-bg-color{
-        background-color: #8D9D90;
-    }
+.title-bg-color{
+    background-color: #8D9D90;
+}
+
+
+/* MEDIA QUERY FOR IPADS, ETC
+@media  (min-device-width : 768px) 
+and (max-device-width : 1024px){
+
+    
+} */
 
 
 /* MEDIA QUERY FOR DESKTOP */
@@ -392,9 +400,9 @@ img.error {
     }
 
     .odd > img {
-    height: auto;
-    width: 220px;
-    margin: 0px 10px 0px 0px;
+        height: auto;
+        width: 220px;
+        margin: 0px 10px 0px 0px;
 }
 
     .two-col{
@@ -402,9 +410,23 @@ img.error {
         grid-template-rows: auto;
     }
 
-
-
+        .two-col-about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
   }
+
+    .two-col-about .pics{
+        padding: 10px 50px 10px 0px;
+
+    }
+
+
+
+
+}
+
 
 
 
