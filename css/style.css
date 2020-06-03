@@ -233,6 +233,12 @@ img.error {
     background-color: #8D9D90;
 }
 
+.two-col-about .pics{
+    max-width: 400px;
+    padding: 20px 0px;
+
+}
+
 
 /* MEDIA QUERY FOR IPADS, ETC
 @media  (min-device-width : 768px) 
@@ -419,6 +425,7 @@ and (max-device-width : 1024px){
 
     .two-col-about .pics{
         padding: 10px 50px 10px 0px;
+        width: 100%;
 
     }
 
