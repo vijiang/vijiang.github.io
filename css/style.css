@@ -111,6 +111,10 @@ img.error {
     height: 100%;
 }
 
+.intro-bio b{
+    color: #79B791;
+}
+
 .hide-on-mobile{
     display: none;
 }
