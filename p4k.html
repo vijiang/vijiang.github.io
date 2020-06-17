@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <title>Python App: Pitchfork Album Reviews - Projects - Vivian Jiang</title>
+    <script async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-133814555-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133814555-2');
+    </script>
+</head>
+
+<body>
+    <script>
+        document.body.className = "fade";
+    </script>
+
+    <main>
+        <div id="container">
+            <div class="content-wrapper max-width-800px">
+                <div class="back-link"><a href="index.html">← back to index</a>
+                </div>
+                <div>
+                    <p class="page-title">Python App: Pitchfork Album Reviews</p>
+                    <p class="page-title"><b>Role:</b> UI/UX Designer,
+                        Developer</p>
+                </div>
+                <div><img data-src="images/sq-images/p4k-preview-sq.png">
+                </div>
+                <div>
+                    <p><i>Using Python, Flask, SQLAlchemy, Spotipy, and Spotify's API</i></p>
+                    <p>This project requests data about Caribou's playlist, <i>The Longest Mixtape:
+                        1000 Songs for You</i>, from Spotify, via their API, and stores those tracks
+                    in a database using SQLAlchemy.
+                    <p>Users will be able to check to see if certain songs or artists are in that
+                        playlist by entering a title or artist name as part of a Flask route: if a
+                        song is in the playlist, the application will also return Pitchfork’s rating
+                        of the album the song is present on, if available; If an artist is
+                        in the playlist, the application will return the song(s) present by the
+                        artist.</p>
+                    This program was developed as a final project for a master's course (SI 507:
+                    Intermediate Python Programming).
+                    <br><br>
+                    Link to this repository on GitHub: <a target="_blank"
+                        href="https://github.com/vijiang/507_final_project">here</a></p>
+
+                </div>
+
+                <div>
+                    <p class="center-text"><u>Application Screenshots</u></p>
+                    <p>
+                        The following are examples of the program running through various pathways
+                        provided by the user.
+                    </p>
+                </div>
+
+                <div>
+                    <p><u>Route 1</u></p>
+                    <p>/ → shows you a greeting + gives instructions on how to user should enter
+                        information
+                    </p>
+                </div>
+                <img data-src="images/p4k/p4kArtboard-1.png" alt="Route 1 - Home screen">
+                
+               <div>
+                    <p><u>Route 2:</u></p>
+                    <p>/check/song/&lt;trackname&gt; → checks if a certain track exists in the database/playlist
+                    </p>
+               </div>
+                <img data-src="images/p4k/p4kArtboard-2.png" alt="Route 2 - Track name search">
+                
+                <p><u>Route 3:</u></p>
+                <p>/check/artist/&lt;artistname&gt; → checks if tracks by a given artist exist
+                    in the database/playlist
+                </p>
+                <img data-src="images/p4k/p4kArtboard-3.png" alt="Route 3 - Artist name search">
+                
+                <p><u>Error messages:</u></p>
+                <p>To provide error prevention/recovery in the case that incorrect or unusable
+                    information is provided.</p>
+                <img data-src="images/p4k/p4kArtboard-4.png" alt="Error message 1">
+                <img data-src="images/p4k/p4kArtboard-5.png" alt="Error message 2">
+
+                <div>
+                    <p class="center-text"><u>Future considerations</u></p>
+                    <p>I'd love to create a version of this script that reversed the general
+                        process: a user could search a track title and a list of the user's
+                        playlists (owned or followed) containing that track would be returned. I have many playlists and loose track of where I added certain songs :)
+                    </p>
+                </div>
+
+            </div> <!-- close content-wrapper -->
+        </div> <!-- closes container -->
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (e) {
+            document.body.className = '';
+        });
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+        });
+    </script>
+</body>
+<footer>
+    <div><a href="mailto:vijiang.umich.edu">get in touch!</a>
+</footer>
+
+</html>
