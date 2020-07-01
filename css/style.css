@@ -12,7 +12,8 @@ body{
     font-size: 18px;
     letter-spacing: 0.4px;
     line-height: 1.5;
-    color: #262626b5;
+    /* color: #262626b5; */
+    color: black;
     background-color: #ffffff;
     box-sizing: border-box;
     position: relative;
@@ -60,7 +61,7 @@ a:active{
 }
 
 b {
-    color: #89BBFE;
+    color: #8D9D90;
 }
 
 li {
@@ -111,8 +112,8 @@ img.error {
     height: 100%;
 }
 
-.intro-bio b{
-    color: #79B791;
+.intro-bio {
+   padding: 20px;
 }
 
 .hide-on-mobile{
@@ -132,6 +133,7 @@ img.error {
 }
 
 .nav{
+    font-size: 16px;
     margin-top:10px;
 }
 
@@ -254,7 +256,7 @@ and (max-device-width : 1024px){
 
 
 /* MEDIA QUERY FOR DESKTOP */
-@media screen and (min-width: 1200px)
+@media screen and (min-width: 1000px)
 { 
 
     footer {
@@ -308,10 +310,7 @@ and (max-device-width : 1024px){
 
 
     .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+        display: inline-block;
     }
 
     .nav > a{
@@ -349,9 +348,9 @@ and (max-device-width : 1024px){
     .index{
         /* width: 1200px; */
         display:grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 400px);
         grid-gap: 25px;
-        grid-auto-rows: 370px;
+        grid-auto-rows: 400px;
     }
 
     .grid-project-items{
@@ -436,6 +435,11 @@ and (max-device-width : 1024px){
         padding: 10px 50px 10px 0px;
         width: 100%;
 
+    }
+
+    .section-big-text{
+        font-size: 22px;
+        font-weight: bold;
     }
 
 
