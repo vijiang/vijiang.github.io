@@ -442,6 +442,17 @@ and (max-device-width : 1024px){
         font-weight: bold;
     }
 
+    .image-and-text-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .image-and-text-row p{
+        padding: 20px;
+    }
+
 
 
 

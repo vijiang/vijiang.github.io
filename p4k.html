@@ -36,32 +36,52 @@
                     <p class="page-title">Python App: Pitchfork Album Reviews</p>
                     <p class="page-title"><b>Role:</b> UI/UX Designer,
                         Developer</p>
-                </div>
-                <!-- <div><img data-src="images/sq-images/p4k-preview-sq.png">
-                </div> -->
+                                    </div>
+
                 <div>
                     <p><i>Using Python, Flask, SQLAlchemy, Spotipy, and Spotify's API</i></p>
-                    <p>This project requests data about Caribou's playlist, <i>The Longest Mixtape:
-                        1000 Songs for You</i>, from Spotify, via their API, and stores those tracks
-                    in a database using SQLAlchemy.
-                    <p>Users will be able to check to see if certain songs or artists are in that
-                        playlist by entering a title or artist name as part of a Flask route: if a
-                        song is in the playlist, the application will also return Pitchfork’s rating
-                        of the album the song is present on, if available; If an artist is
-                        in the playlist, the application will return the song(s) present by the
-                        artist.</p>
-                    This program was developed as a final project for a master's course (SI 507:
-                    Intermediate Python Programming).
-                    <br><br>
-                    Link to this repository on GitHub: <a target="_blank"
-                        href="https://github.com/vijiang/507_final_project">here</a></p>
-
+                    
+                    <div class="image-and-text-row">
+                        <img data-src="images/p4k/longest-mixtape.jpeg">
+                        <p>This project requests data about Caribou's playlist, <a href="https://pitchfork.com/news/58064-caribou-shares-1000-song-mixtape/" target="_blank"><i>The Longest Mixtape: 1000 Songs for You</i></a>, from Spotify, via their API, and stores those tracks in a database using SQLAlchemy.
+                        </p>
+                    </div>
+                    
+                    <p>Data was sourced through a pre-existing Github repository containing Pitchfork album review information, in addition to further webscraping conducted with Beautiful Soup.</p>
+                    <p>I organized this information in a database, based on many-to-one relationships.</p>
+                    <p>
+                        In order to simplify the relationships between entities in the database, we can
+                        assume the following rules:
+                        
+                        <ul>
+                            <li>Any single track will have only one album associated with it.</li>
+                            
+                            <li>Any single album can have many tracks associated with it.</li>
+                            
+                            <li>Any single album will only have one review associated with it.</li>
+                        </ul>
+                    </p>
+                    <img data-src="images/p4k/database_diagram.JPG">
                 </div>
+                    
 
                 <div>
-                    <p class="center-text"><u>Application Screenshots</u></p>
+                    <p class="center-text"><u>Application Flow</u></p>
+                    <p>Users can check to see if certain songs or artists are in that
+                    playlist by entering a title or artist name as part of a Flask route: 
+                    
+<ul>
+                        <li>If a song is in the playlist, the application will also return Pitchfork’s rating of the album the song is present on, if available.</li> 
+                        <li>
+                            If an artist is in the playlist, the application will return the song(s) present by the
+                            artist.
+                        </li>
+</ul>
+                
+                </p>
+
                     <p>
-                        The following are examples of the program running through various pathways
+                        The following are screenshots of the program running through various pathways
                         provided by the user.
                     </p>
                 </div>
@@ -97,9 +117,17 @@
                     <p class="center-text"><u>Future considerations</u></p>
                     <p>I'd love to create a version of this script that reversed the general
                         process: a user could search a track title and a list of the user's
-                        playlists (owned or followed) containing that track would be returned. I have many playlists and loose track of where I added certain songs :)
+                        playlists (owned or followed) containing that track would be returned. I have many playlists and lose track of where I added certain songs :)
                     </p>
                 </div>
+                            <div>
+                                This program was developed as a final project for a master's course (SI 507:
+                                Intermediate Python Programming).
+                                <br><br>
+                                Link to this repository on GitHub: <a target="_blank"
+                                    href="https://github.com/vijiang/507_final_project">here</a></p>
+                            </div>
+
 
             </div> <!-- close content-wrapper -->
         </div> <!-- closes container -->
