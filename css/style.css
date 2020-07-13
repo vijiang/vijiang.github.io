@@ -179,13 +179,13 @@ img.error {
 
 .back-link{
     font-size: 12px;
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 20px;
 }
 
-.page-title{
+/* .page-title{
     text-align: center;
-}
+} */
 
 
 .project-images{
@@ -197,12 +197,11 @@ img.error {
     margin: 15px 0px 15px;
 }
 
-.center-text{
-    text-align: center;
-}
-
-.center-text b{
-    color:initial;
+.subtitle-text{
+    padding: 15px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8D9D90;
 }
 
 .proj-grid{
@@ -290,10 +289,6 @@ and (max-device-width : 1024px){
 
     .max-width-800px > div {
         padding: 10px;
-    }
-
-    .center-text{
-        font-size: 20px;
     }
 
 
@@ -451,6 +446,11 @@ and (max-device-width : 1024px){
 
     .image-and-text-row p{
         padding: 20px;
+    }
+
+    .project-page-title-text{
+        font-size: 30px;
+        font-weight: bold;
     }
 
 
