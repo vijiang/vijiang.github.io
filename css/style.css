@@ -441,11 +441,8 @@ and (max-device-width : 1024px){
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
         margin: 15px;
-    }
-
-    .image-and-text-row p{
-        padding: 20px;
     }
 
     .project-page-title-text{
