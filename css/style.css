@@ -120,6 +120,12 @@ img.error {
     display: none;
 }
 
+.mobile-index-center-text{
+    text-align: center;
+}
+
+
+
 .link-box:hover{
     color: white;
     background-color: #8D9D90;
